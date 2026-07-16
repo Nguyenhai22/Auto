@@ -1,10 +1,10 @@
-name: Run Code 3 Times A Day
+name: Run Code At 14h Daily
 
 on:
   schedule:
-    # Chạy vào phút thứ 0 của các giờ: 1, 7, 13 (UTC)
-    # Tương đương: 8:00, 14:00, 20:00 (Giờ Việt Nam) hằng ngày
-    - cron: '0 1,7,13 * * *'
+    # Chạy vào phút thứ 0 của giờ thứ 7 (UTC)
+    # Tương đương: 14:00 (Giờ Việt Nam) hằng ngày
+    - cron: '0 7 * * *'
   
   # Cho phép kích hoạt chạy thủ công bằng nút bấm trên giao diện GitHub
   workflow_dispatch: 
